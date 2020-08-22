@@ -1,0 +1,41 @@
+/* HEADER STYLES */
+header {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header a {
+    color: white;
+}
+
+/* QUIZ SECTION STYLES */
+#start-page {
+    margin:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#start-page h2 {
+    font-size: 60px;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+    color: transparent;
+    margin: auto;
+}
+
+#start-page p {
+    font-size: 20px;
+    text-align: center;
+}
+
+#start-page button {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    color: white; 
+    padding: 15px 32px;
+    font-size: 20px;
+}
