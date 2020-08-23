@@ -9,18 +9,31 @@
 <body>
     <header>
         <a href="file:///Users/sophiefoutz/Desktop/projects/code-quiz/index.html">High Scores</a>
-        <p>CLOCK</P>
+        <div id="counter">Timer: 70</div>
     </header>
 
-    <section id="start-page">
+    <div id="start-quiz" class="quiz-container">
         <h2>Coding Quiz</h2>
         <p>Welcome to my Coding Quiz! Try to answer the following questions on JavaScript fundamentals within the alloted time. 
             Time will be subtracted from the clock for incorrect answers. Your final score is equal to the amount of time left 
             on the clock when the quiz is completed. GOOD LUCK!
         </p>
+        <button type="button" id="start-button">START QUIZ</button>
+    </div>
 
-        <button type="button" >START QUIZ</button>
-    </section>
+    <div id="quiz" class="quiz-container" style = "display : none;">
+        <div id="question"> <p>Question</p></div>
+        <div id="choices">
+                <button type="button" class="choice" id="A" onclick="checkAnswer('A')">A</button>
+                <button type="button" class="choice" id="B" onclick="checkAnswer('B')">B</button>
+                <button type="button" class="choice" id="C" onclick="checkAnswer('C')">C</button>
+                <button type="button" class="choice" id="D" onclick="checkAnswer('D')">D</button>
+        </div>
+    </div>
+
+    <div id="score-container" style = "display : none;">
+       
+
     
    
     
