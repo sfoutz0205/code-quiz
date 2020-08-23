@@ -9,7 +9,7 @@
 <body>
     <header>
         <a href="file:///Users/sophiefoutz/Desktop/projects/code-quiz/index.html">High Scores</a>
-        <div id="counter">Timer: 70</div>
+        <div id="count">Time: 60</div>
     </header>
 
     <div id="start-quiz" class="quiz-container">
@@ -18,16 +18,16 @@
             Time will be subtracted from the clock for incorrect answers. Your final score is equal to the amount of time left 
             on the clock when the quiz is completed. GOOD LUCK!
         </p>
-        <button type="button" id="start-button">START QUIZ</button>
+        <button class="btn" id="start-btn">START QUIZ</button>
     </div>
 
     <div id="quiz" class="quiz-container" style = "display : none;">
         <div id="question"> <p>Question</p></div>
         <div id="choices">
-                <button type="button" class="choice" id="A" onclick="checkAnswer('A')">A</button>
-                <button type="button" class="choice" id="B" onclick="checkAnswer('B')">B</button>
-                <button type="button" class="choice" id="C" onclick="checkAnswer('C')">C</button>
-                <button type="button" class="choice" id="D" onclick="checkAnswer('D')">D</button>
+                <button class="btn" id="A" onclick="checkAnswer('A')">A</button>
+                <button class="btn" id="B" onclick="checkAnswer('B')">B</button>
+                <button class="btn" id="C" onclick="checkAnswer('C')">C</button>
+                <button class="btn" id="D" onclick="checkAnswer('D')">D</button>
         </div>
     </div>
 
