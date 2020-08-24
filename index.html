@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <a href="file:///Users/sophiefoutz/Desktop/projects/code-quiz/index.html">High Scores</a>
-        <div id="count">Time: 60</div>
+        <button class="btn" id="scores-btn">High Scores</button>
+        <div id="time">Time: 60</div>
     </header>
 
     <div id="start-quiz" class="quiz-container">
@@ -24,20 +24,30 @@
     <div id="quiz" class="quiz-container" style = "display : none;">
         <div id="question"> <p>Question</p></div>
         <div id="choices">
-                <button class="btn" id="A" onclick="checkAnswer('A')">A</button>
-                <button class="btn" id="B" onclick="checkAnswer('B')">B</button>
-                <button class="btn" id="C" onclick="checkAnswer('C')">C</button>
-                <button class="btn" id="D" onclick="checkAnswer('D')">D</button>
+            <button class="btn" id="A" onclick="checkAnswer('A')">A</button>
+            <button class="btn" id="B" onclick="checkAnswer('B')">B</button>
+            <button class="btn" id="C" onclick="checkAnswer('C')">C</button>
+            <button class="btn" id="D" onclick="checkAnswer('D')">D</button>
         </div>
     </div>
 
-    <div id="score-container" style = "display : none;">
-       
+    <div id="score" class="quiz-container" style = "display : none;">
+        <h2>Good Job! You have finished the Quiz!!</h2>
+        <form id="score-form">
+            <label>Enter Your Initials:</label><br>
+            <input type="text" id="initials"/><br>
+            <input type="button" class="btn" onclick="saveHighScore()" value="Save Score"/>
+        </form>
+    </div>
 
-    
-   
-    
+    <div id="high-scores" class="quiz-container" style = "display : none;">
+        <h2>High Scores</h2>
+        <ul id="highScoresList"></ul>
+        <a class="btn" href="index.html">Go Home</a>
+    </div>
 
-    <script src="assets/js/script.js"></script>
+
+     <script src="assets/js/script.js"></script>
+
 </body>
 </html>

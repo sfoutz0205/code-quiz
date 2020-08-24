@@ -15,11 +15,13 @@ header a {
 
 /*Quiz Styles */
 .quiz-container {
-    margin:100px;
+    margin:100px 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    border: darkblue dotted;
+    padding: 100px;
 }
 
 #start-quiz h2 {
@@ -39,6 +41,7 @@ header a {
     padding: 15px 32px;
     color: white;
     background-image: linear-gradient(to left, violet, indigo, blue, green, orange, red);
+    margin: 20px 0;
 }
 
 #start-button {
@@ -47,9 +50,13 @@ header a {
 }
 
 #question {
-    font-size: 35px;
+    font-size: 25px;
 }
 
-.choice {
-    /* background-color: cornflowerblue; */
+#high-scores {
+    flex-direction:column;
+}
+
+#high-scores h2 {
+    font-size: 40px;
 }
